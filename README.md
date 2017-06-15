@@ -232,7 +232,7 @@ We use a pipeline to implement these models and we use all CPU cores to build th
 
 ## Comparison of all the models 
 
-#### The comparison shown below is in terms of test data predicttion accuracy
+#### The comparison shown below is in terms of test data prediction accuracy
 
 ![Alt text](https://github.com/niharikabalachandra/Language-Detection/blob/master/accuracy.png)
 
