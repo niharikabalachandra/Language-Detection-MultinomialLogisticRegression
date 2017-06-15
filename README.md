@@ -247,6 +247,8 @@ We use a pipeline to implement these models and we use all CPU cores to build th
 
 #### Prediction accuracy of 82.3849% was achieved on test data using a model trained with 2-gram Word logistic regression Model
 
+![Alt text](https://github.com/niharikabalachandra/Language-Detection/blob/master/accuracy.png)
+
 # Inference 
 
 The European Parliment corpus is sizable at about 5 GB. This would seem to be a data at scale problem requiring Big Data analysis. However, by means of sampling we can execute the language detection classifier on a regular PC using the SciPy stack. Around 26.5 MB of text files were randomly selected for each language and analysis was carried out for this subsample (~554 MB) of the 5 GB corpus. We are able to still get a model accuracy of 93.1775%, with the model generalizing to new unseen data. 
