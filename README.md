@@ -75,7 +75,7 @@ Similarly the following prominent trends emerged:
 - 53 Italian strings were missclassified as Portuguese
 - 43 Danish strings were missclassified as Dutch
 
-
+![Alt text](https:
 
 
 ## Analysis of models
