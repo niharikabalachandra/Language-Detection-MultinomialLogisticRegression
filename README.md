@@ -230,6 +230,10 @@ We use a pipeline to implement these models and we use all CPU cores to build th
 
 #### Prediction accuracy of 82.3849% was achieved on test data using a model trained with 2-gram Word logistic regression Model
 
+## Comparison of all the models 
+
+#### The comparison shown below is in terms of test data predicttion accuracy
+
 ![Alt text](https://github.com/niharikabalachandra/Language-Detection/blob/master/accuracy.png)
 
 ## Analysis of result for 4-gram Character Model
@@ -247,9 +251,6 @@ Similarly the following prominent trends emerged:
 - 22 Danish strings were missclassified as Dutch
 - 22 Estonian strings were missclassified as Lithuanian
 
-## Comparison of all the models 
-
-#### The comparison shown below is in terms of test data predicttion accuracy
 ![Alt text](https://github.com/niharikabalachandra/Language-Detection/blob/master/Crosstab.png)
 
 # Inference 
