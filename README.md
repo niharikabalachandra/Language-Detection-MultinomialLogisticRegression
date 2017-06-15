@@ -247,6 +247,9 @@ Similarly the following prominent trends emerged:
 - 22 Danish strings were missclassified as Dutch
 - 22 Estonian strings were missclassified as Lithuanian
 
+## Comparison of all the models 
+
+#### The comparison shown below is in terms of test data predicttion accuracy
 ![Alt text](https://github.com/niharikabalachandra/Language-Detection/blob/master/Crosstab.png)
 
 # Inference 
