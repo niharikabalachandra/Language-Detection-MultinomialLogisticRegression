@@ -83,10 +83,10 @@ Similarly the following prominent trends emerged:
          ro       0.88      0.96      0.92       927
          sk       0.97      0.41      0.58       929
          sl       0.95      0.93      0.94       998
-         sv       0.96      0.86      0.91       996
-avg / total       0.92      0.90      0.90     20755
-
-0.903444953023
+         sv       0.96      0.86      0.91       996 
+     avg/total    0.92      0.90      0.90     20755
+     
+     0.903444953023
 
 ### Prediction accuracy of 90.344% was achieved on test data using a model trained with logistic regression 
 
