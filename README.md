@@ -63,10 +63,10 @@ Character frequency analysis is undertaken using a logistic regressing model. Bi
 
 ## Step 7: Using the trained model to make predictions on the Test data
 
-## Analysis of result
+## Analysis of result for 4-gram Character Model
 
 The crosstab below shows us the false positives and false negatives that gives us some insight into correlation between languages. "P" stands for Predicted values and "A" stands for Actual values in the crosstab. 
-- 502 strings in Slovak where missclassified as Czech. This points at the two languages being highly correlated. This makes sense since Czech Republic and Slovakia have a shared history contributing to similartes between the two languages spoken in this region. 
+- 399 strings in Slovak where missclassified as Czech. This points at the two languages being highly correlated. This makes sense since Czech Republic and Slovakia have a shared history contributing to similartes between the two languages spoken in this region. 
 
 Similarly the following prominent trends emerged:
 - 170 Spanish strings were missclassified as Portuguese
@@ -74,6 +74,9 @@ Similarly the following prominent trends emerged:
 - 57 Swedish strings were missclassified as Danish
 - 53 Italian strings were missclassified as Portuguese
 - 43 Danish strings were missclassified as Dutch
+
+
+
 
 ## Analysis of models
 
