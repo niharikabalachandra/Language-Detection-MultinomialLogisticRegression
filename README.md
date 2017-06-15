@@ -69,14 +69,16 @@ The crosstab below shows us the false positives and false negatives that gives u
 - 399 strings in Slovak where missclassified as Czech. This points at the two languages being highly correlated. This makes sense since Czech Republic and Slovakia have a shared history contributing to similartes between the two languages spoken in this region. 
 
 Similarly the following prominent trends emerged:
-- 170 Spanish strings were missclassified as Portuguese
-- 73 Italian strings were missclassified as Romanian
-- 57 Swedish strings were missclassified as Danish
-- 53 Italian strings were missclassified as Portuguese
-- 43 Danish strings were missclassified as Dutch
+- 114 Spanish strings were missclassified as Portuguese
+- 68 Estonian strings were missclassified as Finnish
+- 44 Swedish strings were missclassified as Danish
+- 42 Italian strings were missclassified as Romanian
+- 30 Italian strings were missclassified as Portuguese
+- 28 Dutch strings were missclassified as German
+- 22 Danish strings were missclassified as Dutch
+- 22 Estonian strings were missclassified as Lithuanian
 
-![Alt text](https:
-
+![Alt text](https://github.com/niharikabalachandra/Language-Detection/blob/master/Crosstab.png)
 
 ## Analysis of models
 
