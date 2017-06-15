@@ -84,7 +84,6 @@ Similarly the following prominent trends emerged:
          sk       0.97      0.41      0.58       929
          sl       0.95      0.93      0.94       998
          sv       0.96      0.86      0.91       996
-
 avg / total       0.92      0.90      0.90     20755
 
 0.903444953023
