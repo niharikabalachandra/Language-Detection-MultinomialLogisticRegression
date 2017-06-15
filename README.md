@@ -1,6 +1,8 @@
 # Language-Detection
 Language Detection using the European Parliament Proceedings Parallel Corpus. European Parliament Proceedings Parallel Corpus is a text dataset used for evaluating language detection engines. The 1.5GB corpus includes 21 languages spoken in EU.  This project aims to build a machine learning model trained on this dataset to predict new unseen data.
 
+The Training data can be downloaded [here](http://www.statmt.org/europarl/). Be sure to download the source resource (file size: 1.5 GB)
+
 ## Step 1: Reading the files from individual folders as part of data extraction
 Step 2: Removing noise from Training data
 
@@ -93,29 +95,3 @@ Similarly the following prominent trends emerged:
 # Inference
 
 The European Parliment corpus is sizable at about 5 GB. This would seem to be a data at scale problem requiring Big Data analysis. However, by means of sampling we can execute the language detection classifier on a regular PC using the SciPy stack. Around 26.5 MB of text files were randomly selected for each language and analysis was carried out for this subsample (~554 MB) of the 5 GB corpus. We are able to still get a model accuracy of 90.344%, with the model generalizing to new unseen data. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
