@@ -3,6 +3,20 @@ Language Detection using the European Parliament Proceedings Parallel Corpus. Eu
 
 The Training data can be downloaded [here](http://www.statmt.org/europarl/). Be sure to download the source resource (file size: 1.5 GB)
 
+Ask yourself why would they have selected this problem for the challenge? What are some gotchas in this domain I should know about?
+
+What is the highest level of accuracy that others have achieved with this dataset or similar problems / datasets ?
+
+What types of visualizations will help me grasp the nature of the problem / data?
+
+What feature engineering might help improve the signal?
+
+Which modeling techniques are good at capturing the types of relationships I see in this data?
+
+Now that I have a model, how can I be sure that I didn't introduce a bug in the code? If results are too good to be true, they probably are!
+
+What are some of the weakness of the model and and how can the model be improved with additional work?
+
 ## Step 1: Reading the files from individual folders as part of data extraction
 Step 2: Removing noise from Training data
 
