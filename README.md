@@ -3,19 +3,9 @@ Language Detection using the European Parliament Proceedings Parallel Corpus. Eu
 
 The Training data can be downloaded [here](http://www.statmt.org/europarl/). Be sure to download the source resource (file size: 1.5 GB)
 
-Ask yourself why would they have selected this problem for the challenge? What are some gotchas in this domain I should know about?
+## Choice of model
 
-What is the highest level of accuracy that others have achieved with this dataset or similar problems / datasets ?
-
-What types of visualizations will help me grasp the nature of the problem / data?
-
-What feature engineering might help improve the signal?
-
-Which modeling techniques are good at capturing the types of relationships I see in this data?
-
-Now that I have a model, how can I be sure that I didn't introduce a bug in the code? If results are too good to be true, they probably are!
-
-What are some of the weakness of the model and and how can the model be improved with additional work?
+We use multinomial logistic regression instead of naive Bayes classifiers because it does not assume statistical independence of the input random variables. This alone makes up for the longer training time to train the multinomial logistic regression model. Logistic regression alone will not do well if the features used to train it are highly correlated. There is also the problem of overfitting the training data that needs to be considered. We therefore, use L2 or Ridge regularization along with multinomial logistic regression to prevent overfitting and also to help deal with correlated features. L2 regularization also introduces sparcity and helps shrink the regression coefficients.
 
 ## Step 1: Reading the files from individual folders as part of data extraction
 Step 2: Removing noise from Training data
@@ -255,4 +245,21 @@ Similarly the following prominent trends emerged:
 
 # Inference 
 
+By means of experimenting with hyperparameters we see that the character frequency analysis serves better than word frequency analysis in the case of language detection. This reinforces the idea that learning to differentiate languagues is mostly about learning the disassociation between the script of a language rather than the vocabulary of a language.
+
+It is therefore important to remove digits and common punctuations in the imported raw text data which may be common accross languages and therefore, add noise to the training data. This process helps is bring to the fore the difference across languages.
+
+Multinomial logistic regression does poorly when it comes to differentiating between similar languages as seen with Slovak and Czech, which were often missclassified.
+
+# Conclusion
+
 The European Parliment corpus is sizable at about 5 GB. This would seem to be a data at scale problem requiring Big Data analysis. However, by means of sampling we can execute the language detection classifier on a regular PC using the SciPy stack. Around 26.5 MB of text files were randomly selected for each language and analysis was carried out for this subsample (~554 MB) of the 5 GB corpus. We are able to still get a model accuracy of 93.1775%, with the model generalizing to new unseen data. 
+
+# Future work
+
+The 4-gram character analysis model can be further improved by implementing a grid-search method that helps fine tune the model hyperparameters.
+
+We can also try higher n-gram models however the time required to train these models may be very high on a regular PC
+
+A Neural network model can be implemented which may perform better, however, the computational expense of training such a large dataset on a neural network architecture does not justify the gain in prediction accuracy.
+
