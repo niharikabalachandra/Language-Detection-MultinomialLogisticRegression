@@ -225,7 +225,7 @@ We use a pipeline to implement these models and we use all CPU cores to build th
 
 #### The comparison shown below is in terms of test data prediction accuracy
 
-![Alt text](https://github.com/niharikabalachandra/Language-Detection-MultinomialLogisticRegression/blob/master/accuracy.png)
+![Alt text](https://github.com/niharikabalachandra/Language-Detection-MultinomialLogisticRegression/blob/master/accuracycomparison.png)
 
 ## Analysis of result for 4-gram Character Model
 
