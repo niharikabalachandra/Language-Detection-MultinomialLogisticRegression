@@ -257,9 +257,11 @@ The European Parliment corpus is sizable at about 5 GB. This would seem to be a 
 
 # Future work
 
+Training the models using GPU instead of CPU to reduce computation time
+
 The 4-gram character analysis model can be further improved by implementing a grid-search method that helps fine tune the model hyperparameters.
 
-We can also try higher n-gram models however the time required to train these models may be very high on a regular PC
+We can also try higher n-gram models however the computational expense and time required to train these models may be very high for a regular PC
 
-A Neural network model can be implemented which may perform better, however, the computational expense of training such a large dataset on a neural network architecture does not justify the gain in prediction accuracy.
+A Neural network model such as Recurrent Neural Networks, can be implemented which may perform better, however, the computational expense of training such a large dataset on a neural network architecture does not justify the gain in prediction accuracy.
 
