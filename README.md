@@ -10,7 +10,7 @@ I use multinomial logistic regression instead of naive Bayes classifiers because
 ## Step 1: Reading the files from individual folders as part of data extraction
 Step 2: Removing noise from Training data
 
-##### Note
+#### Note:
 Around 26.5 MB of text files were randomly selected for each language and analysis was carried out for this subsample (~554 MB) of the 5 GB corpus
 
 ## Step 2: Removing noise from Training data
