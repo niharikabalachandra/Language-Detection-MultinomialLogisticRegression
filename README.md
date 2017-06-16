@@ -5,7 +5,7 @@ The Training data can be downloaded [here](http://www.statmt.org/europarl/). Be 
 
 ## Choice of model
 
-We use multinomial logistic regression instead of naive Bayes classifiers because it does not assume statistical independence of the input random variables. This alone makes up for the longer training time to train the multinomial logistic regression model. Logistic regression alone will not do well if the features used to train it are highly correlated. There is also the problem of overfitting the training data that needs to be considered. We therefore, use L2 or Ridge regularization along with multinomial logistic regression to prevent overfitting and also to help deal with correlated features. L2 regularization also introduces sparcity and helps shrink the regression coefficients.
+I use multinomial logistic regression instead of naive Bayes classifiers because it does not assume statistical independence of the input random variables. This alone makes up for the longer training time to train the multinomial logistic regression model. Logistic regression alone will not do well if the features used to train it are highly correlated. There is also the problem of overfitting the training data that needs to be considered. We therefore, use L2 or Ridge regularization along with multinomial logistic regression to prevent overfitting and also to help deal with correlated features. L2 regularization also introduces sparcity and helps shrink the regression coefficients.
 
 ## Step 1: Reading the files from individual folders as part of data extraction
 Step 2: Removing noise from Training data
